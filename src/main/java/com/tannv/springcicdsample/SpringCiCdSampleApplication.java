@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringCiCdSampleApplication {
 
 	public static void main(String[] args) {
-		System.out.println("start Spring application");
 		SpringApplication.run(SpringCiCdSampleApplication.class, args);
 	}
 
