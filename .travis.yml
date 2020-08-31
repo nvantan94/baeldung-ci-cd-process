@@ -5,4 +5,4 @@ before_install:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker pull openjdk:8-jdk-alpine
 script:
-  - ./mvnw clean deploy
+  - ./mvnw clean compile jib:build -P deploy-docker
