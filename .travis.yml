@@ -1,5 +1,4 @@
 env:
-  - DOCKER_PASSWORD=tannv960818@
   - DOCKER_USERNAME=nvantan
 language: java
 jdk:
