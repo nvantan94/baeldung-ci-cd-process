@@ -10,7 +10,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: 39fbe80e-fac0-4aef-9fa0-b55549bd2d53
+    secure: "39fbe80e-fac0-4aef-9fa0-b55549bd2d53"
   app: baeldung-ci-cd-process-sample
   on:
     repo: nvantan94/baeldung-ci-cd-process
