@@ -1,16 +1,16 @@
 language: java
 jdk:
-  - openjdk8
+- openjdk8
 before_install:
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker pull openjdk:8-jdk-alpine
+- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+- docker pull openjdk:8-jdk-alpine
 script:
-  - ./mvnw clean install
-  - ./mvnw heroku:deploy jib:build -P deploy-heroku,deploy-docker
+- "./mvnw clean install"
+- "./mvnw heroku:deploy jib:build -P deploy-heroku,deploy-docker"
 deploy:
   provider: heroku
   api_key:
-    secure: "39fbe80e-fac0-4aef-9fa0-b55549bd2d53"
+    secure: Q80aPx42hXfMvIVvZ6YbeKgoBBF/D1rQLWjxRarCLqh48t0ekiPEfa8JXS/HqkwtKmV982aFgmpR2DDh9X03Ddbt3B70DAi2lKv2LdsbTyek/q+N/t9wb1b07oweYivw2U21gFWRLs0NJFnqBbrJ9qy3vKA78sG5jZGx35khZdOCIMXpOoUiTG3sCnQZlsiEPbEO22Q0e6FhwqQHhhps9i6ygTxJjJjvRkAgQSvuBOTfVsirbGbVlZQZvzdpRQGqw4iaYnNasomdLgJCQ0FKqDGlfNHcUJtwhYXzMGnB6JGRsuzUSRclLjuQh1IK1moOS0CWOexu4uSx5jOPd4d6kCQmM67pZQbZeTtGnxPHrp8UClCmIJdtCVUGk/elGVQ3O01byR3yj5GzJnBwvbEyxZV4t+KvU5qtnVWIPZpNkrpuqaay3do52uNMT5N98fasCkw2VWHrKSHg/+jBeyx2lXDTmTMx5R34GWNEXiA5IiFjcAn6zk9Fy/hHDmEX+U0g27/XHYPYADQJ21vyCQhDrS9E22FPyyeUAQActRENvCK5q7l/ae/SfffjTqty6eGLHKcwNbYvpcMcj7IeDpzNu+GlLS4wcIAHK1XNxseLSD+TUqE+1IZ48/5ovIfjJiIkrFESgJkqg7Lb2b+eWysuumG1b5WCbplliK0dYeg6z4E=
   app: baeldung-ci-cd-process-sample
   on:
     repo: nvantan94/baeldung-ci-cd-process
