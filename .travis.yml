@@ -9,7 +9,7 @@ script:
 - "./mvnw heroku:deploy jib:build -P deploy-heroku,deploy-docker"
 deploy:
   provider: heroku
-  api_key: 42077605-c5cd-425d-b9f1-774b2c19ed7f
+  api_key: ea2ef88e-dddf-4b7b-842f-4e5883cd69a0
   app: baeldung-ci-cd-process-sample
   on:
     repo: nvantan94/baeldung-ci-cd-process
