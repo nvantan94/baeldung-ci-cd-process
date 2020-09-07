@@ -10,7 +10,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: oHrQAd/zuVipdtwtl8rG23Q/YlHO4hP8tZddcj9YDwVxBnQ89IGGeuOFILZMUBfDUqbckuhHJfj45OWP8EtFTTwhGjXvvjI2TFtk28iLI2Vxq0anU0OBZFP6S+8Zgfsrp+XG0oUR8o6gddKCfCA8+0l+lqqkEvGl5V6MF3dgOeLwN37C0/GCl/i7A5vRR63vUvNltAmkSRpsNKbcHlsD6p8Xk5i4ZCGiPu6/TPyV8Wm8KTv2bY5ZrzueLDMzcxeM+d7erbz+DEPBTJBkZejaP39mIw1J9kCoLOnI8QTAIlTPUJurirYqzNNCqz/lga+/5schZ4vvWszTDsML1C5cCReyxnKuij/8/6ERpPsKjT5FfPEMRw1tiAkRy9cqmy4Gcxz8+w1vsGIoHNWQT73B/1h8prpj/G8qC69Fgj0iu0QPeCeixgXTdg5kR7XwlRp007Y8C1xFvWOQHugLvnNwWZpf99KXuaqPEncJuBknpoBdCwGj+nSTWA40abutfdAhmhGjoFK23aXAT/pvHolnSk1R7bvBoWmEzUpG98wDt5KPZR6BcfKRIvaDPgoLHaoI3IcTR6dHWdk15VoJgXb0ENOHbVui9vBsIenc3WrRS2bcYwyyLtKpuZcx6KPk+DhD0unqKMo0TdE3CMd+9aZhi8ZMkjqKoamrz6PUK4WV9Zw=
+    secure: 42077605-c5cd-425d-b9f1-774b2c19ed7f
   app: baeldung-ci-cd-process-sample
   on:
     repo: nvantan94/baeldung-ci-cd-process
